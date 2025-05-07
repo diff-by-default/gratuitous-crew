@@ -1,0 +1,17 @@
+names {
+    Superfluous = "Superfluous"
+    Gratuitous = "Gratuitous"
+    Excessive = "Excessive"
+    SuperfluousPlus = "Superfluous+"
+    GratuitousPlus = "Gratuitous+"
+    ExcessivePlus = "Excessive+"
+}
+
+tooltips {
+    SuperfluousTip = "64 (Rank 0) - 2000 (Max)"
+    GratuitousTip = "128 (Rank 0) - 2000 (Max)"
+    ExcessiveTip = "256 (Rank 0) - 3000 (Max)"
+    SuperfluousPlusTip = "64 (Rank 0) - 4000 (Max)"
+    GratuitousPlusTip = "128 (Rank 0) - 4000 (Max)"
+    ExcessivePlusTip = "256 (Rank 0) - 6000 (Max)"
+}

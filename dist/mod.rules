@@ -1,0 +1,86 @@
+ID = RocketLLama.gratuitousCrew
+
+Name = "Gratuitous Crew"
+
+Version = 1.0.0
+
+CompatibleGameVersions = ["0.28.2"]
+
+ModifiesGameplay = true
+
+Author = "RocketLLama"
+
+Logo = "logo.png"
+
+StringsFolder = "strings"
+
+Description = "This mod adds additional Crew Scarcity settings.\n\n"\
+			  "Mostly increase early game crew counts, but variants for increased max crew sizes are included as well.\n"\
+              "- Superfluous  64 (R0)  - 2000 (Max)\n\n"\
+			  "- Gratuitous   128 (R0) - 2000 (Max)\n\n"\
+			  "- Excessive    256 (R0) - 3000 (Max)\n\n"\
+              "- Superfluous+ 64 (R0)  - 4000 (Max)\n\n"\
+			  "- Gratuitous+  128 (R0) - 4000 (Max)\n\n"\
+			  "- Excessive+   256 (R0) - 6000 (Max)\n\n"
+
+Actions
+[
+
+	{
+		Action = AddMany
+		AddTo = "<modes/career/career.rules>/CrewScarcityLevels"
+		CreateIfNotExisting = true
+		ManyToAdd
+		[
+			{
+				ID = "superfluous"
+				NameKey = "names/Superfluous"
+				TipKey = "tooltips/SuperfluousTip"
+				CrewFamePrereqFameRange = [0, &/TIER_TABLES/MaxFame]
+				CrewFamePrereqFameRoundToMultiple = 5
+				CrewFamePrereqCountRange = [64, 2000]
+			},
+			{
+				ID = "gratuitous"
+				NameKey = "names/Gratuitous"
+				TipKey = "tooltips/GratuitousTip"
+				CrewFamePrereqFameRange = [0, &/TIER_TABLES/MaxFame]
+				CrewFamePrereqFameRoundToMultiple = 5
+				CrewFamePrereqCountRange = [128, 2000]
+			},
+			{
+				ID = "excessive"
+				NameKey = "names/Excessive"
+				TipKey = "tooltips/ExcessiveTip"
+				CrewFamePrereqFameRange = [0, &/TIER_TABLES/MaxFame]
+				CrewFamePrereqFameRoundToMultiple = 5
+				CrewFamePrereqCountRange = [256, 3000]
+			},
+			{
+				ID = "superfluousmax"
+				NameKey = "names/SuperfluousPlus"
+				TipKey = "tooltips/SuperfluousPlusTip"
+				CrewFamePrereqFameRange = [0, &/TIER_TABLES/MaxFame]
+				CrewFamePrereqFameRoundToMultiple = 5
+				CrewFamePrereqCountRange = [64, 4000]
+			},
+			{
+				ID = "gratuitousmax"
+				NameKey = "names/GratuitousPlus"
+				TipKey = "tooltips/GratuitousPlusTip"
+				CrewFamePrereqFameRange = [0, &/TIER_TABLES/MaxFame]
+				CrewFamePrereqFameRoundToMultiple = 5
+				CrewFamePrereqCountRange = [128, 4000]
+			},
+			{
+				ID = "excessivemax"
+				NameKey = "names/ExcessivePlus"
+				TipKey = "tooltips/ExcessivePlusTip"
+				CrewFamePrereqFameRange = [0, &/TIER_TABLES/MaxFame]
+				CrewFamePrereqFameRoundToMultiple = 5
+				CrewFamePrereqCountRange = [256, 6000]
+			}
+
+		]
+	}
+]
