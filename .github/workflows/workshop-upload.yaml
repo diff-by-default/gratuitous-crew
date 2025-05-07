@@ -7,6 +7,7 @@ on:
 
 jobs:
   steam-workshop-upload:
+    runs-on: ubuntu-latest
     steps:
       - name: steam-workshop-upload
         uses: Weilbyte/steam-workshop-upload@v1.1
