@@ -1,2 +1,12 @@
-- name: steam-workshop-upload
-  uses: Weilbyte/steam-workshop-upload@v1.1)
+name: Upload to steam workshop
+on:
+  push:
+    branches:
+    - '*'
+
+
+jobs:
+  steam-workshop-upload:
+    steps:
+      - name: steam-workshop-upload
+        uses: Weilbyte/steam-workshop-upload@v1.1
