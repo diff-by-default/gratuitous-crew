@@ -1,0 +1,14 @@
+- name: steam-workshop-upload
+  on:
+    push:
+      branches:
+      - '*'
+  uses: weilbyte/steam-workshop-upload@v1
+  with: 
+    appid: 799600 # Game's Steam App ID
+    itemid: 3477181663 # Your mod's Steam Workshop ID
+    path: 'dist' # Path to your mod's folder from repository root
+  env:
+    STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }} # Your Steam username
+    STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }} # Your Steam password
+    STEAM_TFASEED: ${{ secrets.STEAM_TFASEED }} # Your Steam Guard 2FA shared secret (Optional)
