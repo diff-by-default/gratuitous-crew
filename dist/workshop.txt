@@ -1,0 +1,19 @@
+This mod adds additional Crew Scarcity settings. Mostly aimed at using multiple ships in the campaign since the current crew scarcity nearly makes multiple ships impossible with the way crew max is currently total per player, not per ship.
+
+After installation, you can find them in the normal Advanced Settings where Crew Scarcity is.
+
+Mostly increase early/mid game crew counts, but variants for increased max crew sizes are included as well.
+
+Note that this does increase the amount of crew at every Fame rank--I'm just too lazy to write down every single crew count for each rank, but the Rank 0 (game start) and Max values are below (and in the in-game tooltips) to get a rough idea.
+
+- Superfluous 64 (Rank 0) - 2000 (Max)
+
+- Gratuitous 128 (Rank 0) - 2000 (Max)
+
+- Excessive 256 (Rank 0) - 3000 (Max)
+
+- Superfluous+ 64 (Rank 0) - 4000 (Max)
+
+- Gratuitous+ 128 (Rank 0) - 4000 (Max)
+
+- Excessive+ 256 (Rank 0) - 6000 (Max)
