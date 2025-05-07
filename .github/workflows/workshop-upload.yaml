@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: steam-workshop-upload
         uses: Weilbyte/steam-workshop-upload@v1.1
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }} 
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
